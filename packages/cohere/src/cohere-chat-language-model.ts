@@ -100,6 +100,9 @@ export class CohereChatLanguageModel implements LanguageModelV1 {
 
       // messages:
       messages: chatPrompt,
+
+      // force 'strict' safety mode to enforce stricter model guidelines in the prompt
+      safety_mode: 'strict'
     };
 
     switch (type) {
